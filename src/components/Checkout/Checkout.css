@@ -1,0 +1,45 @@
+/* src/components/Checkout/Checkout.css */
+.payment-details {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-left: 4px solid #28a745;
+}
+
+.success-animation {
+  animation: bounceIn 1s ease-in-out;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.order-items {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.form-check {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-check:hover {
+  border-color: #28a745;
+  background-color: #f8fff8;
+}
+
+.form-check-input:checked {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.card-header {
+  border-bottom: none;
+}

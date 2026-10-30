@@ -1,0 +1,59 @@
+/* src/components/Invoice/Invoice.css */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .container, .container * {
+    visibility: visible;
+  }
+  
+  .container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .btn-group, .card-header, .badge {
+    display: none !important;
+  }
+  
+  .card {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .table {
+    font-size: 12px;
+  }
+}
+
+.invoice-header {
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.table th {
+  border-top: none;
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8fff8;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}

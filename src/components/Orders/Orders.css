@@ -1,0 +1,13 @@
+/* src/components/Orders/Orders.css */
+.order-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.order-card .card-header {
+  border-bottom: 1px solid #dee2e6;
+}

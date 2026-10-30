@@ -1,0 +1,15 @@
+/* Add to your main CSS file */
+@media print {
+  .navbar, .footer, .btn, .no-print {
+    display: none !important;
+  }
+  
+  body {
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .container {
+    max-width: 100% !important;
+  }
+}

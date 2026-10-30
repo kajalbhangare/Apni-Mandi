@@ -1,0 +1,57 @@
+/* src/components/TrackOrder/TrackOrder.css */
+.tracking-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.tracking-timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #dee2e6;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #28a745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -38px;
+  top: 0;
+  z-index: 2;
+}
+
+.timeline-step.completed .timeline-icon {
+  background-color: #28a745;
+}
+
+.timeline-step:not(.completed) .timeline-icon {
+  background-color: #6c757d;
+}
+
+.timeline-content {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+
+.timeline-step.completed .timeline-content {
+  background: #e8f5e8;
+  border-left: 4px solid #28a745;
+}
